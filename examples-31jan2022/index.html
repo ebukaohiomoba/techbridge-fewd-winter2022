@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myh1">This is my header</h1>
+    <p id="p1">This is my body paragraph</p>
+    <p id="p2">This is another body paragraph</p>
+</body>
+<script>
+    let h2 = document.getElementsByTagName("p");
+    let h1 = document.getElementById("myh1");
+    console.log(h1);
+    console.log(h2);
+    for (i=0; i< h2.length; i++) {
+        let aParagraphy = h2.item[i];
+        console.log(aParagraphy);
+    }
+    let greetings = ["hi","guten tag","hola","hello"];
+    greetings.push("good evening");
+    console.log(greetings);
+
+    for(i=0;i<greetings.length;i++){
+        finalGreetings = greetings.pop();
+        console.log(finalGreetings);
+    }
+    for (let i=greetings.length-1; i<0; i--) {
+        let agreeting = greetings.pop();
+        console.log(agreeting);
+    }
+    let techbridgeStudents = ["Prevalier Mba","Darrielle Evans","Chukwuebuka Ohiomoba","Michael Greene","Mark Lawson"];
+    for(i=0; i< techbridgeStudents.length;i++){
+        myName = techbridgeStudents[2];
+        console.log(myName);
+    }
+
+</script>
+</html>
