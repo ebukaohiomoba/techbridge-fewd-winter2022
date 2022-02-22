@@ -1,0 +1,17 @@
+{
+  "name": "express-example",
+  "version": "1.0.0",
+  "description": "example for class with express",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: No test specified\\\" && exit 1\""
+  },
+  "keywords": [
+    "techbridge"
+  ],
+  "author": "ebuka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
