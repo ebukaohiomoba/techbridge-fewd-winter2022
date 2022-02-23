@@ -69,33 +69,31 @@ function findInGrid() {
 
 
 function findInList() {
-//Grabs the number that user enters in input box
+//Grabs items in the list
 let tbTextToFind = document.getElementById("tbTextToFind").value;
-console.log(tbNumberToFind);
-let gridRows = document.getElementsByClassName("row");
-for(let row = 0; row < gridRows.length; row++){
+console.log(tbTextToFind);
+let listRow = document.getElementsByClassName("row");
+for(let row = 0; row < listRow.length; row++){
     //Collects the spans from a row 
-    let gridRow = gridRows[row].getElementsByClassName("spanName");
-    console.log(gridRow);
-    console.log(gridRow.length);
+    let spanoflistRow = listRow[row].getElementsByClassName("spanName");
+    console.log(spanoflistRow);
+    console.log(spanoflistRow.length);
 
     //loop through each span in the collection
-    for(let i = 0; i < gridRow.length; i++) {
+    for(let i = 0; i < spanoflistRow.length; i++) {
         //log the row
-        console.log("Span collection: ", gridRow[i]);
-        //get the id of the span
-        //let spanID = gridRow[i].id;
-        //console.log("spanID: ", spanID);
-
-        let spanText = gridRow[i].innerText;
+        console.log("Span collection: ", spanoflistRow[i]);
+        let spanText = spanoflistRow[i].innerText;
         console.log("spanText: ", spanText);
-        if(spanText == tbNumberToFind) {
-            //document.getElementById("span3-1").className = 'spanHighlighted'
-            //document.getElementsByClassName("spanName").className = 'spanHighlighted';
-           
-        }
+        if(spanText == tbTextToFind) {
+            spanoflistRow[i].classList.add('spanHighlighted');
+        }  else {
+            spanoflistRow[i].classList.remove('spanHighlighted');
 
-    }}
+        }
+    }
+
+}
 
 function sortIt() {
     //
