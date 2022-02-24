@@ -95,7 +95,25 @@ for(let row = 0; row < listRow.length; row++){
 
 }
 
-function sortIt() {
-    //
 }
+function sortIt() {
+    let finalResult = document.getElementById('resultsRow')
+    let rowListReview = document.getElementById("row0").children;
+     console.log(rowListReview)
+     let newArray = [];
+    for (let t = 0; t < rowListReview.length; t++){
+        console.log(rowListReview[t].innerText);
+        newArray.push(rowListReview[t].innerText);
+        newArray.sort()
+    }
+    console.log(newArray);
+    let gone = []
+    for (let t =0; t < rowListReview.length; t++){
+    for (let v =0; v < newArray.length; v++){
+        if (newArray[t] == rowListReview[v].innerText)
+    gone.push(rowListReview[v]) 
+    }    
+}for (let t=0; t < gone.length; t++){
+    finalResult.appendChild(gone[t])
+} 
 }
