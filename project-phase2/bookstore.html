@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Search</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+    <h1 style="text-align: center">Find a book in the List</h1>
+    <p>Search for a book by ISBN Number </p>
+    <div id="controls" class="controls">
+        <label for="tbTextToFind" id="label1" class="cLabel"></label>
+        <input type="text" id="tbTextToFind" placeholder="Enter ISBN to seach" />
+        <button id="btnFindIt" onclick="findInList();">Find It</button>
+        <button id="Reset" onclick="resetFindInList();">Reset</button>
+    </div>
+
+    <div id="original">
+        <div id="row0" class="row">
+            <div class="column center blue">
+                <span id="span1-1" class="spanName">978-92-95055-02-5</span>
+            </div>
+            <div class="column center red">
+                <span id="span1-2" class="spanName">972-92-95055-02-5</span>
+            </div>
+            <div class="column center yellow">
+                <span id="span1-3" class="spanName">900-93-95056-02-4</span>
+            </div>
+            <div class="column center red">
+                <span id="span2-1" class="spanName">400-92-90333-02-3</span>
+            </div>
+            <div class="column center yellow">
+                <span id="span2-2" class="spanName">567-13-95050-02-7</span>
+            </div>
+            <div class="column center blue">
+                <span id="span2-3" class="spanName">833-89-89333-02-9</span>
+            </div>
+            <div class="column center yellow">
+                <span id="span3-1" class="spanName">978-69-95055-02-1</span>
+            </div>
+            <div class="column center red">
+                <span id="span3-2" class="spanName">978-58-95055-02-3</span>
+            </div>
+            <div class="column center blue">
+                <span id="span3-3" class="spanName">422-90-78888-08-8</span>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+    </div>
+</body>
+
+</html>
